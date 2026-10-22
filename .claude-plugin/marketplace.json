@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nano",
+  "description": "Plugins da NANO Produtora",
+  "owner": {
+    "name": "NANO Produtora"
+  },
+  "plugins": [
+    {
+      "name": "instagram-nano",
+      "description": "As 13 skills de Instagram em português, adaptadas para a NANO (base: instagram-agent-skill, MIT).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.claude/skills/ig-audit",
+        "./.claude/skills/ig-caption",
+        "./.claude/skills/ig-carousel",
+        "./.claude/skills/ig-comment",
+        "./.claude/skills/ig-dm",
+        "./.claude/skills/ig-human",
+        "./.claude/skills/ig-plan",
+        "./.claude/skills/ig-profile",
+        "./.claude/skills/ig-reel",
+        "./.claude/skills/ig-reply",
+        "./.claude/skills/ig-repurpose",
+        "./.claude/skills/ig-story",
+        "./.claude/skills/ig-viral"
+      ],
+      "license": "MIT",
+      "category": "productivity",
+      "version": "2026.10.22"
+    }
+  ]
+}
