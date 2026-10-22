@@ -43,6 +43,9 @@ printf 'Às 7h o salão estava vazio. Às 20h, 700 pessoas.\n\nComenta BASTIDOR 
 saida="$(python3 -I "$SK/ig-caption/caption.py" "$TMP/legenda.txt")"
 confere "legenda reconhece 'Comenta BASTIDOR'" "comment a keyword" "$saida"
 confere "legenda lê hashtag com acento" "#produçãodeeventos" "$saida"
+printf 'Dois eventos na mesma casa.\n\nSe o seu evento tem duas salas, chama a gente no direct.\n' > "$TMP/legenda2.txt"
+confere "legenda reconhece 'chama a gente no direct'" "DM me" \
+  "$(python3 -I "$SK/ig-caption/caption.py" "$TMP/legenda2.txt")"
 
 # Humanizador: troca em português, sem inglês no meio, sem pontuação solta.
 printf 'Para de rolar o feed! É crucial elevar o nível do seu evento. Marca alguém que precisa ver isso!\n' > "$TMP/ruim.txt"

@@ -55,7 +55,8 @@ ASKS = [
     # português. A palavra-chave vem em caixa alta: "Comenta EVENTO".
     (re.compile(r"(?i:\bcoment(?:e|a|ar)\b)\s+(?:(?i:a palavra)\s+)?[\"“]?[A-ZÀ-Ý0-9]{2,}\b"),
      "comment a keyword"),
-    (re.compile(r"(?i)\b(?:me )?(?:chama|chame|manda|mande)\s+(?:um |uma )?(?:no |na )?"
+    (re.compile(r"(?i)\b(?:me |nos )?(?:chama|chame|manda|mande|envia|envie)\s+"
+                r"(?:a gente\s+|um\s+|uma\s+)?(?:no\s+|na\s+|pelo\s+|por\s+)?"
                 r"(?:direct|dm|inbox|mensagem|whats|whatsapp)\b"), "DM me"),
     (re.compile(r"(?i)\bsalv[ae]\s+(?:esse|este|o|a|essa|esta)\s+"
                 r"(?:post|reel|v[íi]deo|carrossel|checklist|lista|dica)\b|\bsalva (?:a[íi]|pra)\b"),
